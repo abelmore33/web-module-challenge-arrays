@@ -143,9 +143,12 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(array,removedFlavor){
+  let flavorIndex = array.indexOf(removedFlavor);
+  array.splice(flavorIndex,1);
+  return array;
 }
+console.log("task 6",removeFlavorByName(originalFlavors,"Green Mint Stick"));
 
 
 
